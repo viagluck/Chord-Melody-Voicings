@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chord-Melody Voicings</title>
+	<link rel="stylesheet" type="text/css" href="chord-melody.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="raphael.min.js"></script>
+	<script src="chord-melody.js"></script>
+</head>
+<body>
+	<div id="heading">Chord-Melody Voicings</div>
+	<div id="instructions">Select a root note and a chord type,<br>then click through to see the voicings.</div>
+	<div id="paper"></div>
+	<div id=chord_name><span id="noteLabel"></span><span id="qualityLabel"></span><span id="flat_symbol_line_height_kluge">&#9837;</span></div>
+	<div id="menu">
+		<div id="notes">
+			<div id="natural_notes">
+				<button class="note_button" id="c">C</button>
+				<button class="note_button" id="d">D</button>
+				<button class="note_button" id="e">E</button>
+				<button class="note_button" id="f">F</button>
+				<button class="note_button" id="g">G</button>
+				<button class="note_button" id="a">A</button>
+				<button class="note_button" id="b">B</button>
+			</div>
+			<div id="sharp_notes">
+				<button class="note_button" id="cs">C&#9839;</button>
+				<button class="note_button" id="ds">D&#9839;</button>
+				<button class="note_button" id="fs">F&#9839;</button>
+				<button class="note_button" id="gs">G&#9839;</button>
+				<button class="note_button" id="as">A&#9839;</button>
+			</div>
+			<div id="flat_notes">
+				<button class="note_button" id="db">D&#9837;</button>
+				<button class="note_button" id="eb">E&#9837;</button>
+				<button class="note_button" id="gb">G&#9837;</button>
+				<button class="note_button" id="ab">A&#9837;</button>
+				<button class="note_button" id="bb">B&#9837;</button>
+			</div>
+		</div>
+		<div id="chord_types">
+			<button class="type_button" id="1">maj7</button>
+			<button class="type_button" id="2">7</button>
+			<button class="type_button" id="3">m7</button>
+			<button class="type_button" id="4">m7&#9837;5</button>
+			<button class="type_button" id="5">&#176;7</button>
+			<!-- <button class="type_button" id="6">7&#9839;5</button> -->
+		</div>
+<!-- 		<div id="voicing_type">
+			<button class="voicing_type_button" id="drop2">Drop 2</button>
+			<button class="voicing_type_button" id="drop3">Drop 3</button>
+		</div> -->
+		<div id="voicing_navigation">
+			<button class="voicing_navigation_button" id="previous">Previous<br>Voicing<br>&#8920;</button>
+			<button class="voicing_navigation_button" id="next">Next<br>Voicing<br>&#8921;</button>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>
